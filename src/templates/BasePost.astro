@@ -1,22 +1,16 @@
 ---
-import type { IFrontmatter } from 'astro-boilerplate-components';
-
-import { BlogPost } from '@/partials/BlogPost';
-import { CTA } from '@/partials/CTA';
+import BlogPost from '@/partials/BlogPost.vue';
+import CTA from '@/partials/CTA.vue';
 import Base from '@/templates/Base.astro';
 import { AppConfig } from '@/utils/AppConfig';
 
-export interface Props {
-  content: IFrontmatter;
-}
-
-const { content } = Astro.props as Props;
+const { content } = Astro.props;
 const title = `${content.title} - ${AppConfig.site_name}`;
 ---
 
 <Base head={{ title, description: content.description }}>
-  <BlogPost frontmatter={content}>
-    <slot></slot>
+  <BlogPost content={content}>
+    <slot />
   </BlogPost>
 
   <CTA />
