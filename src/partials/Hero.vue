@@ -13,16 +13,16 @@
       </template>
       <template v-slot:socialButtons>
         <a href="/">
-          <HeroSocial src="/assets/images/twitter-icon.png" alt="Twitter icon" />
+          <HeroSocial :src="'/assets/images/twitter-icon.png'" :alt="'Twitter icon'" />
         </a>
         <a href="/">
-          <HeroSocial src="/assets/images/facebook-icon.png" alt="Facebook icon" />
+          <HeroSocial :src="'/assets/images/facebook-icon.png'" :alt="'Facebook icon'" />
         </a>
         <a href="/">
-          <HeroSocial src="/assets/images/linkedin-icon.png" alt="Linkedin icon" />
+          <HeroSocial :src="'/assets/images/linkedin-icon.png'" :alt="'Linkedin icon'" />
         </a>
         <a href="/">
-          <HeroSocial src="/assets/images/youtube-icon.png" alt="Youtube icon" />
+          <HeroSocial :src="'/assets/images/youtube-icon.png'" :alt="'Youtube icon'" />
         </a>
       </template>
     </HeroAvatar>
